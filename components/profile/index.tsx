@@ -132,7 +132,7 @@ export default function Profile({
             </div>
             {user.verified ? (
               <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <a
+                <Link
                   href={`https://github.com/${user.username}`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -140,7 +140,7 @@ export default function Profile({
                 >
                   <GitHubIcon className="mr-3 h-5 w-5 text-white" />
                   <span>View GitHub Profile</span>
-                </a>
+                </Link>
               </div>
             ) : (
               <div className="mt-6 flex flex-col justify-stretch space-y-3 sm:flex-row sm:space-y-0 sm:space-x-4">

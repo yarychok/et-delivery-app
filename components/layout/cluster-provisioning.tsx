@@ -1,4 +1,5 @@
 import { LoadingDots, AlertCircleIcon } from '@/components/icons';
+import Link from 'next/link';
 import { MouseEvent, useState } from 'react';
 
 export default function ClusterProvisioning() {
@@ -42,14 +43,14 @@ export default function ClusterProvisioning() {
         </button>
 
         <div className="text-center">
-          <a
+          <Link
             href="https://cloud.mongodb.com/"
             target="_blank"
             rel="noreferrer"
             className="font-mono text-xs text-gray-400 hover:text-white hover:underline transition-all"
           >
             Check cluster status
-          </a>
+          </Link>
         </div>
 
         {error && (
